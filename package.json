@@ -3,7 +3,7 @@
   "displayName": "Doculate - Markdown to Word Converter",
   "description": "Convert Markdown files to Word documents with Mermaid diagram support and reference templates",
   "version": "0.1.0",
-  "publisher": "veereshshivakumar",
+  "publisher": "veereshns",
   "icon": "icon.png",
   "repository": {
     "type": "git",
