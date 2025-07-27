@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#1E88E5" stroke="#1565C0" stroke-width="4"/>
+  
+  <!-- Markdown icon (stylized M) -->
+  <path d="M30 45 L30 85 L38 85 L38 55 L46 70 L54 55 L54 85 L62 85 L62 45 L52 45 L46 60 L40 45 Z" fill="white"/>
+  
+  <!-- Arrow pointing right -->
+  <path d="M70 55 L70 75 L85 75 L85 70 L95 64 L85 58 L85 55 Z" fill="white"/>
+  
+  <!-- Word document icon -->
+  <rect x="88" y="45" width="20" height="25" fill="white" rx="2"/>
+  <rect x="90" y="48" width="16" height="2" fill="#1E88E5"/>
+  <rect x="90" y="52" width="16" height="2" fill="#1E88E5"/>
+  <rect x="90" y="56" width="16" height="2" fill="#1E88E5"/>
+  <rect x="90" y="60" width="12" height="2" fill="#1E88E5"/>
+  <rect x="90" y="64" width="14" height="2" fill="#1E88E5"/>
+</svg>

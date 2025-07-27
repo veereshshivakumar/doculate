@@ -1,0 +1,79 @@
+{
+  "name": "doculate-ai",
+  "displayName": "Doculate - Markdown to Word Converter",
+  "description": "Convert Markdown files to Word documents with Mermaid diagram support and reference templates",
+  "version": "0.1.0",
+  "publisher": "veereshs88",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/veereshshivakumar/doculate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/veereshshivakumar/doculate/issues"
+  },
+  "homepage": "https://github.com/veereshshivakumar/doculate#readme",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "galleryBanner": {
+    "color": "#1E88E5",
+    "theme": "dark"
+  },
+  "keywords": [
+    "markdown",
+    "word",
+    "docx",
+    "pandoc",
+    "mermaid",
+    "diagrams",
+    "export",
+    "document",
+    "converter"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./tsconfig.extension.json",
+    "watch": "tsc -watch -p ./tsconfig.extension.json",
+    "lint": "eslint ."
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "doculate.openPanel",
+        "title": "Open Doculate Panel",
+        "category": "Doculate"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "doculateView",
+          "name": "Doculate",
+          "when": "true"
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "marked": "^9.1.2",
+    "docx": "^8.5.0",
+    "child_process": "^1.0.2"
+  },
+    "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/node": "^22.5.5",
+    "@types/vscode": "^1.74.0",
+    "eslint": "^9.9.0",
+    "globals": "^15.9.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1"
+  }
+}
