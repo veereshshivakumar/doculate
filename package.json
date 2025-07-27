@@ -7,12 +7,12 @@
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/veereshshivakumar/doculate.git"
+    "url": "https://github.com/Veereshs88/doculate.git"
   },
   "bugs": {
-    "url": "https://github.com/veereshshivakumar/doculate/issues"
+    "url": "https://github.com/Veereshs88/doculate/issues"
   },
-  "homepage": "https://github.com/veereshshivakumar/doculate#readme",
+  "homepage": "https://github.com/Veereshs88/doculate#readme",
   "engines": {
     "vscode": "^1.74.0"
   },
