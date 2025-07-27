@@ -1,18 +1,18 @@
-# Source TypeScript files
+# Source TypeScript files (exclude from package, keep compiled JS)
 **/*.ts
+!extension.ts
 tsconfig*.json
 
-# Build artifacts and temporary files
+# Build artifacts and development files
 .vscode/
-node_modules/
 .git/
 .gitignore
-
-# Development files
 eslint.config.js
 *.vsix
+temp_extract*/
+*.zip
 
-# Documentation (keep only essential ones)
+# Documentation (keep only README)
 CONTRIBUTING.md
 CHANGELOG.md
 
@@ -31,9 +31,15 @@ tests/
 .DS_Store
 Thumbs.db
 
-# NPM files
+# NPM files that aren't needed at runtime
 .npmrc
-package-lock.json
 
 # Editor files
 .editorconfig
+
+# Development dependencies only (keep production deps)
+node_modules/@types/
+node_modules/@eslint/
+node_modules/eslint*
+node_modules/globals/
+node_modules/typescript*
