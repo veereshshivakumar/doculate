@@ -1,0 +1,39 @@
+# Source TypeScript files
+**/*.ts
+tsconfig*.json
+
+# Build artifacts and temporary files
+.vscode/
+node_modules/
+.git/
+.gitignore
+
+# Development files
+eslint.config.js
+*.vsix
+
+# Documentation (keep only essential ones)
+CONTRIBUTING.md
+CHANGELOG.md
+
+# Test files
+test/
+tests/
+**/*.test.*
+**/*.spec.*
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# NPM files
+.npmrc
+package-lock.json
+
+# Editor files
+.editorconfig
