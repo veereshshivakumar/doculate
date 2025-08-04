@@ -2,7 +2,7 @@
   "name": "doculate",
   "displayName": "Doculate - Markdown to Word Converter",
   "description": "Convert Markdown files to Word documents with Mermaid diagram support and reference templates",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "publisher": "veereshns",
   "icon": "icon.png",
   "repository": {
@@ -40,8 +40,8 @@
     "onStartupFinished"
   ],
   "scripts": {
-    "compile": "tsc -p ./tsconfig.extension.json",
-    "watch": "tsc -watch -p ./tsconfig.extension.json",
+    "compile": "npx tsc -p ./tsconfig.extension.json",
+    "watch": "npx tsc -watch -p ./tsconfig.extension.json",
     "lint": "eslint ."
   },
   "contributes": {
