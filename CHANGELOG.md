@@ -12,6 +12,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Mermaid diagram support and batch processing
 - Enhanced export capabilities design
 
+## [0.1.5] - 2025-01-27
+
+### Fixed
+- **CRITICAL**: Fixed extension activation issues that prevented commands from being registered
+- **CRITICAL**: Fixed missing dependencies (`marked`, `docx`) in VSIX package
+- **CRITICAL**: Fixed context parameter issues in DoculateProvider
+- **CRITICAL**: Fixed "command 'doculate.openPanel' not found" error
+- **CRITICAL**: Fixed extension not activating properly on startup
+- Added proper activation events for reliable extension loading
+- Added debugging logs for troubleshooting activation issues
+- Included all required dependencies in the VSIX package
+
+### Technical
+- Updated activation events to ensure proper extension loading
+- Fixed DoculateProvider constructor to properly handle ExtensionContext
+- Added console logging for debugging extension activation
+- Removed node_modules exclusion from .vscodeignore to include dependencies
+
 ## [0.1.0] - 2025-01-27
 
 ### Added

@@ -4,7 +4,6 @@ tsconfig*.json
 
 # Build artifacts and temporary files
 .vscode/
-node_modules/
 .git/
 .gitignore
 

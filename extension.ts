@@ -7,7 +7,7 @@ const { marked } = require('marked');
 const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, ImageRun } = require('docx');
 
 export function activate(context: vscode.ExtensionContext) {
-    const provider = new DoculateProvider(context.extensionUri);
+    const provider = new DoculateProvider(context.extensionUri, context);
     
     context.subscriptions.push(
         vscode.window.registerWebviewViewProvider('doculateView', provider),
@@ -21,7 +21,7 @@ class DoculateProvider implements vscode.WebviewViewProvider {
     public static readonly viewType = 'doculateView';
     private _view?: vscode.WebviewView;
 
-    constructor(private readonly _extensionUri: vscode.Uri) {}
+    constructor(private readonly _extensionUri: vscode.Uri, private readonly _context: vscode.ExtensionContext) {}
 
     public resolveWebviewView(webviewView: vscode.WebviewView) {
         this._view = webviewView;
@@ -34,7 +34,7 @@ class DoculateProvider implements vscode.WebviewViewProvider {
         webviewView.webview.html = this._getSidebarHtml();
         webviewView.webview.onDidReceiveMessage(async (data) => {
             if (data.type === 'openPanel') {
-                DoculatePanel.createOrShow(this._extensionUri, undefined as any);
+                DoculatePanel.createOrShow(this._extensionUri, this._context);
             }
         });
     }
